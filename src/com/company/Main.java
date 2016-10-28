@@ -4,24 +4,15 @@ public class Main {
 
     public static void main(String[] args)
     {
-        int grades[]= new int[100];
+            int grades[]= new int[100];
+            String name[]= new String [100];
+
         Scanner input = new Scanner(System.in);
-        int sum=0;
-        int count=0;
-        int grade2;
+        System.out.println("Enter your name");
+            String n = input.nextLine();
+        System.out.println("Enter your grade");
+            int g = input.nextInt();
 
-        while(true)
-        {
-            System.out.println("Insert your grade or -1:");
-            int grade2=input.nextInt();
-            if(grade2 == -1);
-                break;
-            grades[count]=grade2;
-        }
-
-        for(int v=0;v< count;v++)
-            sum=sum+grade2[v];
-        int average = sum/count;
-        System.out.println(average);
+        System.out.println(n + " " + g);
     }
 }
